@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import Main from './components/MainComponent';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
     render() {
         return (
-          <BrowserRouter>
-            <div className="App">
-                {/* <Navbar dark color="primary">
-                <div className="container">
-                    <NavbarBrand href="/">Cafe Cervantes</NavbarBrand>
+            <BrowserRouter>
+                <div className="App">
+                    <Main />
                 </div>
-                </Navbar> */}
-                <Main />
-            </div>
-          </BrowserRouter>
+            </BrowserRouter>
         );
     }
 }

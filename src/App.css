@@ -1,84 +1,21 @@
-/*global*/
-body {
-  background-color: #C5742C;
-  color: white;
-  font-family: "Work Sans", sans-serif; }
-
-h1 {
-  font-size: 4rem; }
+/* global */
 
 h1, h2, h3 {
-  font-family: "Courgette", cursive; }
+    font-family: Courgette, cursive;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #C5742C;
+}
+
+.bg-primary {
+    background-color: #4D6E7F !important;
+}
+
+/* home page */
 
 .jumbotron {
-  margin: 0;
-  padding: 10px;
-  background-color: #7E8D9C; }
-
-#modalHeader {
-  background-color: #4D6E7F; }
-
-.navbar {
-  background-color: #4D6E7F; }
-
-a, a:hover {
-  color: inherit;
-  text-decoration: none; }
-
-a, a:link {
-  color: white;
-  text-decoration: none; }
-
-a:hover {
-  color: #7E8D9C; }
-
-.breadcrumb-item + .breadcrumb-item::before, .breadcrumb-item.active {
-  color: #D5C9BB; }
-
-.breadcrumb {
-  background-color: #813D18; }
-
-.navbar-toggler-icon {
-  color: white; }
-
-.btn-primary {
-  background-color: #7E8D9C;
-  border-color: #7E8D9C; }
-
-.site-footer {
-  background-color: #813D18; }
-
-/*homePage*/
-#cafeCarousel {
-  position: relative; }
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
-
-/*ourStory*/
-/*menu*/
-.bg-dark {
-  background-color: #813D18 !important; }
-
-.bg-light {
-  background-color: #D5C9BB !important;
-  color: #212529; }
-
-/*venue*/
-/*contactUs*/
-.btn-light {
-  background-color: #D5C9BB;
-  border-color: #D5C9BB; }
-
-.map-responsive {
-  overflow: hidden;
-  position: relative;
-  height: 250px;
-  border-radius: .25rem; }
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute; }
+    margin-bottom: 0 !important;
+    background-color: #7E8D9C !important;
+}
