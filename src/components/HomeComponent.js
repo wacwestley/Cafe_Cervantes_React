@@ -4,21 +4,21 @@ import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCa
 const items = [
         {
             id: 0,
-            src: "../../public/assets/images/ourStory.jpg",
+            src: "/assets/images/ourStory.jpg",
             altText: "Barista making a Latte",
             header: "Humble Beginnings",
             caption: "Our Coffee is Great but Our Story is Even Better."
         },
         {
             id: 1,
-            src: "../../public/assets/images/coffeeMenu.jpg",
+            src: "/assets/images/coffeeMenu.jpg",
             altText: "Fresh cup of coffee surrounded by roasted beans",
             header: "Handcrafted Menu",
             caption: "See what our talented group of coffee specialists have curated just for you"
         },
         {
             id: 2,
-            src: "../../public/assets/images/venue.jpg",
+            src: "/assets/images/venue.jpg",
             altText: "looking over the heads of people in a crowd to see the stage",
             header: "Upcoming Events",
             caption: "Come see what could be your next night out"
@@ -54,7 +54,7 @@ const Home = () => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 >
-                <img src={item.src} alt={item.altText} />
+                <img src={item.src} alt={item.altText} className="d-inline w-100" />
                 <CarouselCaption captionText={item.caption} captionHeader={item.header} />
             </CarouselItem>
         );
@@ -62,16 +62,22 @@ const Home = () => {
 
     return (
         <React.Fragment>
-            <Carousel
-                activeIndex={activeIndex}
-                next={next}
-                previous={previous}
-            >
-                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-                {slides}
-                <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-                <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-            </Carousel>
+            <div className="container">
+                <div className="row row-content">
+                    <div className="col mx-auto">
+                        <Carousel
+                            activeIndex={activeIndex}
+                            next={next}
+                            previous={previous}
+                        >
+                            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+                            {slides}
+                            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+                        </Carousel>
+                    </div>
+                </div>
+            </div>
         </React.Fragment>
     );
 }
