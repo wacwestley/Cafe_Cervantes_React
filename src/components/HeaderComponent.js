@@ -32,7 +32,7 @@ class Header extends Component {
     }
 
     handleLogin(event) {
-        alert(`Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
+        alert(`Name: ${this.name.value} Email: ${this.email.value} Attendants: ${this.select.value} Date: ${this.date.value} Subject: ${this.text.value}`);
         this.toggleModal();
         event.preventDefault();
     }
@@ -93,11 +93,38 @@ class Header extends Component {
                         Schedule an Event
                     </ModalHeader>
                     <ModalBody>
-                        <Form>
+                        <Form onSubmit={this.handleLogin}>
                             <FormGroup>
-                                <Label></Label>
-                                <Input />
+                                <Label htmlFor="name">Full Name</Label>
+                                <Input type="text" id="name" name="name"
+                                    innerRef={input => this.name = input} />
                             </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="email">Email Address</Label>
+                                <Input type="text" id="email" name="email"
+                                    innerRef={input => this.email = input}/>
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="select">Number of Attendants</Label>
+                                <Input type="select" name="select" id="select"
+                                    innerRef={input => this.select = input}>
+                                    <option value="0">...</option>
+                                    <option value="1">0-200</option>
+                                    <option value="2">200-500</option>
+                                    <option value="3">500+</option>
+                                </Input>
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="date">Date</Label>
+                                <Input type="date" name="date" id="date" placeholder="date placeholder"
+                                    innerRef={input => this.date = input} />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label htmlFor="text">Subject</Label>
+                                <Input type="textarea" name="text" id="text"
+                                    innerRef={input => this.text = input}/>
+                            </FormGroup>
+                            <Button type="submit" value="submit" color="secondary">Submit</Button>
                         </Form>
                     </ModalBody>
                 </Modal>
