@@ -80,7 +80,7 @@ class Header extends Component {
                                 </NavItem>
                             </Nav>
                             <span className="ml-auto">
-                                <Button onClick={this.toggleModal}>
+                                <Button className='headerButton' onClick={this.toggleModal}>
                                     <i className="fa fa-calendar fa-lg" /> Schedule Event
                                 </Button>
                             </span>

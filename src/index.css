@@ -44,8 +44,12 @@ a:hover {
     color: #7E8D9C;
 }
 
-button {
+.headerButton {
     float: right;
+}
+
+.breadcrumb {
+    background-color: #813D18;
 }
 
 .modal-title {
@@ -74,4 +78,37 @@ footer {
     border-radius: 0;
     background-color: #7E8D9C;
     padding: 2rem 1rem;
+}
+
+/* Menu */
+/* cannot find a way to override material-ui css rules without using !important since they are at the root and loaded first */
+.menuAccordion {
+    border: 1px solid #813D18;
+    border-radius: .25rem;
+}
+
+.menuHeader {
+    color: white !important;
+    background-color: #813D18 !important;
+    
+}
+
+.menuBody {
+    background-color: #D5C9BB;
+}
+
+.menuContainer {
+    padding: 0px 0 !important;
+}
+
+.MuiAccordion-root.Mui-expanded {
+    margin: 0px !important;
+}
+
+.MuiAccordionSummary-content.Mui-expanded {
+    margin: 0px 0 !important;
+}
+
+p {
+    margin: 0px 0;
 }
