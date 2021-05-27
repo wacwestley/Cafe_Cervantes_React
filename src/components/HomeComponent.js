@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 
 const items = [
@@ -7,21 +8,24 @@ const items = [
             src: "/assets/images/ourStory.jpg",
             altText: "Barista making a Latte",
             header: "Humble Beginnings",
-            caption: "Our Coffee is Great but Our Story is Even Better."
+            caption: "Our Coffee is Great but Our Story is Even Better.",
+            href: "/OurStory"
         },
         {
             id: 1,
             src: "/assets/images/coffeeMenu.jpg",
             altText: "Fresh cup of coffee surrounded by roasted beans",
             header: "Handcrafted Menu",
-            caption: "See what our talented group of coffee specialists have curated just for you"
+            caption: "See what our talented group of coffee specialists have curated just for you",
+            href: "/Menu"
         },
         {
             id: 2,
             src: "/assets/images/venue.jpg",
             altText: "looking over the heads of people in a crowd to see the stage",
             header: "Upcoming Events",
-            caption: "Come see what could be your next night out"
+            caption: "Come see what could be your next night out",
+            href: "/Venue"
         }
     ];
     
@@ -55,7 +59,13 @@ const Home = () => {
                 onExited={() => setAnimating(false)}
                 >
                 <img src={item.src} alt={item.altText} className="d-inline w-100" />
-                <CarouselCaption captionText={item.caption} captionHeader={item.header} />
+                <a href={item.href}>
+                    <CarouselCaption
+                        className='caption'
+                        captionText={item.caption}
+                        captionHeader={item.header}
+                    />
+                </a>
             </CarouselItem>
         );
     });

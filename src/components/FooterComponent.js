@@ -9,11 +9,11 @@ function Footer(props) {
                     <div className="col-sm-4 col-6">
                         <h5>Links</h5>
                         <ul className="list-unstyled">
-                            <li><Link to="/home">Home</Link></li>
-                            <li><Link to="/ourstory">Our Story</Link></li>
-                            <li><Link to="/menu">Menu</Link></li>
-                            <li><Link to="/venue">Venue</Link></li>
-                            <li><Link to="/contactus">Contact Us</Link></li>
+                            <li><Link to="/Home">Home</Link></li>
+                            <li><Link to="/OurStory">Our Story</Link></li>
+                            <li><Link to="/Menu">Menu</Link></li>
+                            <li><Link to="/Venue">Venue</Link></li>
+                            <li><Link to="/ContactUs">Contact Us</Link></li>
                         </ul>
                     </div>
                     <div className="col-sm-4 col-6 text-center">

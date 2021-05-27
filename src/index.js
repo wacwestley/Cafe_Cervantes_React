@@ -5,8 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fontsource/courgette';
 import '@fontsource/work-sans';
-/* import 'font-awesome/css/font-awesome.css';
-throwing error after installing Material-UI investigate*/
+import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 import './index.css';
 
