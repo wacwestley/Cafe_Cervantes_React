@@ -32,8 +32,8 @@ const Menu = () => {
                             <Typography><h3>Specialty Drinks</h3></Typography>
                         </MuiAccordionSummary>
                         <MuiAccordionDetails className='menuBody'>
-                            <Typography>
-                                <div className='container menuContainer'>
+                            <div className='container menuContainer'>
+                                <Typography>
                                     <div className='row'>
                                         <div className='col-6'>
                                             <p>Espresso</p>
@@ -42,8 +42,98 @@ const Menu = () => {
                                             <p>2.25</p>
                                         </div>
                                     </div>
-                                </div>
-                            </Typography>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Drip coffee</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>2 / 2.50 / 2.75</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Cold Brew</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>3 / 3.50 / 4</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Americano</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>2.25 / 2.75 / 3.25</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Capppucino</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>4.50</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Latte</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>4.50</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Mocha</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>4.50</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Black Tea</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>2 / 2.50 / 2.75</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Green Tea</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>2 / 2.50 / 2.75</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Chai Tea</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>2.50 / 3 / 3.75</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                            </div>
                         </MuiAccordionDetails>
                     </MuiAccordion>
                     <MuiAccordion square className='menuAccordion' expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -51,11 +141,68 @@ const Menu = () => {
                             <Typography><h3>Breakfast</h3></Typography>
                         </MuiAccordionSummary>
                         <MuiAccordionDetails className='menuBody'>
-                            <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                            sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-                            </Typography>
+                            <div className='container menuContainer'>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Steel Cut Oats</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>5</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Fruit and Yogurt Parfait</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>5</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Housemade Granola</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>5</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Egg and Avocado Toast</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>5.50</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Sausage Melt</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>4</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Yogurt Bowl</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>5</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                            </div>
                         </MuiAccordionDetails>
                     </MuiAccordion>
                     <MuiAccordion square className='menuAccordion' expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -63,11 +210,68 @@ const Menu = () => {
                             <Typography><h3>Lunch</h3></Typography>
                         </MuiAccordionSummary>
                         <MuiAccordionDetails className='menuBody'>
-                            <Typography>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                            sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-                            </Typography>
+                            <div className='container menuContainer'>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>BLT</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>8</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Chicken Salad Wrap</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>7</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Hummus Wrap</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>7</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Cervantes Salad</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>8</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Paleo Lunch</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>7.50</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                                <Typography>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>Vegetarian Lunch</p>
+                                        </div>
+                                        <div className='col-6 text-right'>
+                                            <p>7.50</p>
+                                        </div>
+                                    </div>
+                                </Typography>
+                            </div>
                         </MuiAccordionDetails>
                     </MuiAccordion>
                 </div>

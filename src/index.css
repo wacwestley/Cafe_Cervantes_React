@@ -109,6 +109,6 @@ footer {
     margin: 0px 0 !important;
 }
 
-p {
-    margin: 0px 0;
+.MuiTypography-body1 {
+    font-family: "Work Sans", sans-serif !important;
 }
